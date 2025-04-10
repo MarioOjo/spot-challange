@@ -1,11 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Import Bootstrap JS
-  
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const Home = () => {
-  // Inline styles object
   const styles = {
     body: {
       backgroundImage: 'url(/assets/background.jpg)',
@@ -34,18 +32,21 @@ const Home = () => {
       width: '100%',
       maxWidth: '500px',
       height: 'auto',
-      borderRadius: '10px'
+      borderRadius: '10px',
+      boxShadow: '0 4px 8px rgba(0,0,0,0.3)'
     },
     chooseUsImg: {
       width: '100%',
       maxWidth: '600px',
       height: 'auto',
-      borderRadius: '10px'
+      borderRadius: '10px',
+      boxShadow: '0 4px 8px rgba(0,0,0,0.3)'
     },
     heading: {
       color: '#ffa31a',
       textShadow: '1px 1px #000000',
-      margin: '2rem 0'
+      margin: '2rem 0',
+      fontSize: '2.2rem'
     },
     ctaButton: {
       display: 'inline-block',
@@ -61,7 +62,8 @@ const Home = () => {
       letterSpacing: '1px',
       boxShadow: '4px 4px 0 #000000',
       margin: '20px 0',
-      transition: 'all 0.3s ease'
+      transition: 'all 0.3s ease',
+      borderRadius: '5px'
     },
     ctaButtonHover: {
       backgroundColor: '#808080',
@@ -74,7 +76,8 @@ const Home = () => {
       borderLeft: '3px solid #ffa31a',
       transition: 'all 0.3s ease',
       backgroundColor: 'rgba(41, 41, 41, 0.7)',
-      borderRadius: '5px'
+      borderRadius: '5px',
+      boxShadow: '0 2px 4px rgba(0,0,0,0.2)'
     },
     serviceItemHover: {
       backgroundColor: 'rgba(255, 163, 26, 0.2)'
@@ -88,6 +91,40 @@ const Home = () => {
       boxShadow: '0 10px 30px rgba(0,0,0,0.3)'
     }
   };
+
+  const services = [
+    {
+      title: "Electrical Faults",
+      description: "Repairing wiring issues, fixing faulty outlets, and more."
+    },
+    {
+      title: "Equipment Repairs",
+      description: "Fixing appliances, lighting, and other household equipment."
+    },
+    {
+      title: "Plumbing Services",
+      description: "Leak repairs, faucet installations, drain unclogging, and more."
+    },
+    {
+      title: "Handyman Services",
+      description: "Home maintenance, furniture assembly, painting, and other odd jobs."
+    }
+  ];
+
+  const benefits = [
+    {
+      title: "Fast Response",
+      description: "Same-day services available for urgent repairs."
+    },
+    {
+      title: "Experienced Professionals",
+      description: "Certified and skilled handymen for every task."
+    },
+    {
+      title: "Affordable Rates",
+      description: "Transparent pricing with no hidden costs."
+    }
+  ];
 
   return (
     <div style={styles.body}>
@@ -111,38 +148,17 @@ const Home = () => {
             />
           </div>
           <div className="col-md-6">
-            <div 
-              style={styles.serviceItem}
-              onMouseEnter={e => Object.assign(e.target.style, styles.serviceItemHover)}
-              onMouseLeave={e => e.target.style.backgroundColor = 'rgba(41, 41, 41, 0.7)'}
-            >
-              <h4><strong>Electrical Faults:</strong></h4>
-              <p>Repairing wiring issues, fixing faulty outlets, and more.</p>
-            </div>
-            <div 
-              style={styles.serviceItem}
-              onMouseEnter={e => Object.assign(e.target.style, styles.serviceItemHover)}
-              onMouseLeave={e => e.target.style.backgroundColor = 'rgba(41, 41, 41, 0.7)'}
-            >
-              <h4><strong>Equipment Repairs:</strong></h4>
-              <p>Fixing appliances, lighting, and other household equipment.</p>
-            </div>
-            <div 
-              style={styles.serviceItem}
-              onMouseEnter={e => Object.assign(e.target.style, styles.serviceItemHover)}
-              onMouseLeave={e => e.target.style.backgroundColor = 'rgba(41, 41, 41, 0.7)'}
-            >
-              <h4><strong>Plumbing Services:</strong></h4>
-              <p>Leak repairs, faucet installations, drain unclogging, and more.</p>
-            </div>
-            <div 
-              style={styles.serviceItem}
-              onMouseEnter={e => Object.assign(e.target.style, styles.serviceItemHover)}
-              onMouseLeave={e => e.target.style.backgroundColor = 'rgba(41, 41, 41, 0.7)'}
-            >
-              <h4><strong>Handyman Services:</strong></h4>
-              <p>Home maintenance, furniture assembly, painting, and other odd jobs.</p>
-            </div>
+            {services.map((service, index) => (
+              <div 
+                key={index}
+                style={styles.serviceItem}
+                onMouseEnter={e => Object.assign(e.target.style, styles.serviceItemHover)}
+                onMouseLeave={e => e.target.style.backgroundColor = 'rgba(41, 41, 41, 0.7)'}
+              >
+                <h4><strong>{service.title}:</strong></h4>
+                <p>{service.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -159,30 +175,17 @@ const Home = () => {
             />
           </div>
           <div className="col-md-6 order-md-1">
-            <div 
-              style={styles.serviceItem}
-              onMouseEnter={e => Object.assign(e.target.style, styles.serviceItemHover)}
-              onMouseLeave={e => e.target.style.backgroundColor = 'rgba(41, 41, 41, 0.7)'}
-            >
-              <h4><strong>Fast Response:</strong></h4>
-              <p>Same-day services available for urgent repairs.</p>
-            </div>
-            <div 
-              style={styles.serviceItem}
-              onMouseEnter={e => Object.assign(e.target.style, styles.serviceItemHover)}
-              onMouseLeave={e => e.target.style.backgroundColor = 'rgba(41, 41, 41, 0.7)'}
-            >
-              <h4><strong>Experienced Professionals:</strong></h4>
-              <p>Certified and skilled handymen for every task.</p>
-            </div>
-            <div 
-              style={styles.serviceItem}
-              onMouseEnter={e => Object.assign(e.target.style, styles.serviceItemHover)}
-              onMouseLeave={e => e.target.style.backgroundColor = 'rgba(41, 41, 41, 0.7)'}
-            >
-              <h4><strong>Affordable Rates:</strong></h4>
-              <p>Transparent pricing with no hidden costs.</p>
-            </div>
+            {benefits.map((benefit, index) => (
+              <div 
+                key={index}
+                style={styles.serviceItem}
+                onMouseEnter={e => Object.assign(e.target.style, styles.serviceItemHover)}
+                onMouseLeave={e => e.target.style.backgroundColor = 'rgba(41, 41, 41, 0.7)'}
+              >
+                <h4><strong>{benefit.title}:</strong></h4>
+                <p>{benefit.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

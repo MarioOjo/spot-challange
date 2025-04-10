@@ -1,0 +1,33 @@
+/* Body and base styles */
+body {
+  background-image: url(../assets/background.jpg);
+  background-size: cover;
+  height: auto;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 104vh rgba(27, 27, 27, 0.7);
+  font-family: 'Poppins', sans-serif;
+  color: aliceblue;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Global typography */
+h2 {
+  color: #ffa31a;
+  text-shadow: 1px 1px #000000;
+}
+
+/* Shared utility classes */
+.text-orange {
+  color: #ffa31a;
+}
+
+.hover-orange {
+  transition: all 0.3s ease;
+}
+
+.hover-orange:hover {
+  color: #ffa31a !important;
+  transform: translateY(-2px);
+}

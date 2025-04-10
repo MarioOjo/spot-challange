@@ -1,0 +1,33 @@
+.team-card {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    background: rgba(41, 41, 41, 0.8);
+  }
+  
+  .team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 163, 26, 0.3);
+  }
+  
+  .team-img-container {
+    overflow: hidden;
+  }
+  
+  .team-card img {
+    transition: all 0.5s ease;
+    width: 100%;
+    height: auto;
+  }
+  
+  .team-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  .badges-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }

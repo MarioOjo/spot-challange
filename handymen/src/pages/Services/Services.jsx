@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // To replace anchor tags for React Router
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Import Bootstrap JS
 
@@ -8,48 +7,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Import Bootstrap JS
 function ServicesPage() {
   return (
     <div>
-      <header>
-        <nav className="navbar navbar-expand-lg custom-navbar-bg">
-          <div className="container-fluid">
-            <a className="navbar-brand" href="/"><img src="../assets/handyMen.png" alt="Handy Men Logo" /></a>
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav">
-                <li className="nav-item">
-                  <Link className="nav-link" to="/">
-                    <h4>Home</h4>
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/about">
-                    <h4>About Us</h4>
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link active" to="/services">
-                    <h4>Services</h4>
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/contact">
-                    <h4>Contact Us</h4>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
+      
 
       <div className="container my-5">
         <div className="hero-text mb-5">
