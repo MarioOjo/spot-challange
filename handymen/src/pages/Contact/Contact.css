@@ -1,0 +1,77 @@
+.imgCont{
+    border-radius: 15px;
+}
+.book{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 2em;
+margin: 4em;
+background-color: #ffa31a51;
+border-radius: 15px;
+color: #000000;
+box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+width: 80%;
+}
+
+.bookText{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: stretch;
+padding: 2em;
+}
+
+.contactBody{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+align-content: center;
+}
+
+#cellIcon{
+border-radius: 50%;
+}
+
+.slinksFlex{
+display: flex;
+flex-direction: column;
+}
+.slinksFlex a{
+padding: 10px;
+}
+
+.contacts{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+margin: 2em;
+padding: 2em;
+box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+background-color: #1b1b1b7c;
+border-radius: 15px;
+}
+.linksPackage{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+align-items: center;
+}
+
+.linksPackage h2{
+font-size: 18px;
+}
+.linksPackage h3{
+font-size: 18px;
+}
+
+.txtCont{
+display: flex;
+flex-direction: row;
+}
+.mapCont{
+padding: 10px;
+}
