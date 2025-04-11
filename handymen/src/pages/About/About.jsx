@@ -26,7 +26,7 @@ const About = () => {
       borderRadius: '10px',
       overflow: 'hidden',
       background: 'rgba(41, 41, 41, 0.8)',
-      height: '100%',
+      
       boxShadow: '0 5px 15px rgba(0,0,0,0.2)',
     },
     teamCardHover: {
