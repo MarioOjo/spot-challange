@@ -43,8 +43,8 @@ const About = () => {
       boxShadow: '0 15px 30px rgba(255, 163, 26, 0.3)'
     },
     teamImgContainer: {
-      height: '250px',
-      overflow: 'hidden'
+      width: '100%',
+      height: 'auto',
     },
     teamImg: {
       width: '100%',
@@ -119,6 +119,10 @@ const About = () => {
       background: 'rgba(41, 41, 41, 0.8)',
       padding: '15px',
       borderRadius: '8px'
+    },
+    imgFluid: {
+      height: '100%',
+      height: 'auto',
     }
   };
 
