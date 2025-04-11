@@ -31,6 +31,11 @@ const About = () => {
     },
     teamCardHover: {
       transform: 'translateY(-10px)',
+      boxShadow: '0 15px 30px rgba(255, 163, 26, 0.3)'
+    },
+    teamImgContainer: {
+      width: '100%',
+      height: 'auto',
       boxShadow: '0 15px 30px rgba(255, 163, 26, 0.3)',
     },
     teamImg: {
