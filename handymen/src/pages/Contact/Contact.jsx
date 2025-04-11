@@ -60,13 +60,13 @@ const Contact = () => {
 
       <div class="contacts">
         <div class="linksPackage">
-          <div class="txtCont"><h3>VISIT US AT OUR &nbsp &nbsp</h3><h2>PHYSICAL LOCATION</h2></div>
+          <div class="txtCont"><h3>VISIT US AT OUR PHYSICAL LOCATION</h3></div>
           <div class="mapCont">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3589.321356159183!2d28.20695667518794!3d-25.891804351323568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956608911ce097%3A0x519896b4b6eda40a!2sOpen%20Window%20-%20Centurion!5e0!3m2!1sen!2sza!4v1710455813767!5m2!1sen!2sza" width="300" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
         <div class="linksPackage">
-          <div class="txtCont"><h3>&nbsp&nbsp&nbspOR CONTACT OUR&nbsp</h3><h2>&nbspSOCIAL MEDIA PAGES</h2></div>
+          <div class="txtCont"><h3>OR CONTACT OUR SOCIAL MEDIA PAGES</h3></div>
           <div class="slinksFlex">
             <a href="mailto:someone@example.com"><img src="../assets/emailIcon.png" width="90" height="90"/></a>
             <a href="tel: 083-303-2642"><img id="cellIcon" src="../assets/cellIcon.png" width="90" height="90" border-radius="50%"/></a>
